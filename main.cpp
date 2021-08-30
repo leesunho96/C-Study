@@ -28,16 +28,15 @@ int main()
 	string C = A + B;
 
 
-	//temp1의 경우 temp1에 저장된 주소값 + A  로 메모리 할당하여 구현
-	//temp2의 경우 temp에 힙 메모리 주소값을 가짐. 힙 메모리에 저장.
+	//temp1의 경우 temp1에 저장된 주소값 + A  로 메모리 할당하여 구현 temp1[3] = "12\n"
+	//temp2의 경우 temp2부터 +3byte까지 할당된 메모리에 "12\n" 저장
+	
+
 	char temp1[] = "ab";
 	char *temp2 = "ab";
 
-	if (strcmp(temp1, temp2))
-	{
-		cout << "같음" << endl;
-	}
 
+	cout << temp2[1] << endl;
 	cout << temp1 + 1 << "    " << &temp1 << endl;
 	cout << temp2 + 1 << "    " << &temp2  << endl;
 	string mystring = "hello";
@@ -52,7 +51,7 @@ int main()
 
 
 	//R이용시 내부 문자열을 전부 일반 캐릭터 형으로 정의.
-	string temp3 = R"(abcdefg)";
+	string temp3 = R"(abcd""""efg)"; // (abcde""""fg) 출력 
 
 
 
