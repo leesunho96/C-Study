@@ -51,6 +51,9 @@ int main()
 	cout << mystring2 << endl;
 
 
+	//R이용시 내부 문자열을 전부 일반 캐릭터 형으로 정의.
+	string temp3 = R"(abcdefg)";
+
 
 
 	
