@@ -4,8 +4,8 @@ class lshString
 {
 	char *str;
 
-
 public:
+
 	lshString(char* input); // 기본 생성자, 문자열을 입력받아서 해당 문자열만큼  new로 char배열 생성, 해당 값 복사
 	lshString(lshString &input); // 복사생성자, 매개변수로 lshString 하나 받고, 해당 값이 갖는 str크기만큼 동적 배열 생성, 해당 값 복사
 	const char* getstr(); // 해당 str의 값 반환

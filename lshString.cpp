@@ -1,17 +1,21 @@
 #include "stdafx.h"
 #include "lshString.h"
 
-lshString::lshString(char * input)
+
+
+lshString::lshString(char *input)
 {
 	str = new char(strlen(input) + 1);
-	memcpy(str, input, strlen(input) + 1);
+	*str = NULL;
+	strcat(str, input);
+	//memcpy(str, input, strlen(input) + 1);
 }
 
 lshString::lshString(lshString &input)
 {
 	int strsize = input.size();
 	strsize += 1;
-	str = new char(strsize + 1);
+	this->str = new char(strsize + 1);
 	const char* inputstr = input.getstr();
 	memcpy(str, inputstr, strlen(inputstr) + 1);
 }
@@ -78,12 +82,14 @@ lshString lshString::operator + (lshString &plus)
 	int psize = plus.size();
 	int tsize = this->size();
 
-	char* ctemp = NULL;
+	char* ctemp;
 	ctemp = new char(psize + tsize + 2);
 	*ctemp = NULL;
 	strcat(ctemp, this->str);
 	strcat(ctemp, plus.getstr());
-	return lshString(ctemp);
+	lshString result(ctemp);
+	delete ctemp;
+	return result;
 }
 
 lshString& lshString::operator = (lshString &equal)
