@@ -5,7 +5,7 @@
 
 lshString::lshString(char *input)
 {
-	str = new char(strlen(input) + 1);
+	str = new char[strlen(input) + 1];
 	*str = NULL;
 	strcat(str, input);
 	//memcpy(str, input, strlen(input) + 1);
@@ -15,7 +15,7 @@ lshString::lshString(lshString &input)
 {
 	int strsize = input.size();
 	strsize += 1;
-	this->str = new char(strsize + 1);
+	this->str = new char[strsize + 1];
 	const char* inputstr = input.getstr();
 	memcpy(str, inputstr, strlen(inputstr) + 1);
 }
@@ -71,7 +71,7 @@ void lshString::reverse()
 void lshString::insert(int index, char c)
 {
 	char* temp = str;
-	str = new char(strlen(temp) + 2);
+	str = new char[strlen(temp) + 2];
 	memcpy(str, temp, strlen(str) + 1);
 	memcpy(str + index + 1, temp + index, strlen(temp) - index + 1);
 	str[index] = c;
@@ -83,7 +83,7 @@ lshString lshString::operator + (lshString &plus)
 	int tsize = this->size();
 
 	char* ctemp;
-	ctemp = new char(psize + tsize + 2);
+	ctemp = new char[psize + tsize + 2];
 	*ctemp = NULL;
 	strcat(ctemp, this->str);
 	strcat(ctemp, plus.getstr());
