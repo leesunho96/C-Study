@@ -81,5 +81,6 @@ int main()
 	test3.insert(0, 'c');
 	cout << "test3.insert(0, 'c')후의 test3의 결과값 : " << test3.getstr() << endl;
 	test3 = test1 + test2;
-	cout << test3.getstr();
+	cout << "test3 = test1 + test2의 결과로 나온 test3의 값 : " << test3.getstr() << endl;
+
 }

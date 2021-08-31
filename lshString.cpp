@@ -12,11 +12,11 @@ lshString::lshString(lshString &input)
 	int strsize = input.size();
 	strsize += 1;
 	str = new char(strsize + 1);
-	char* inputstr = input.getstr();
+	const char* inputstr = input.getstr();
 	memcpy(str, inputstr, strlen(inputstr) + 1);
 }
 
-char* lshString::getstr()
+const char* lshString::getstr()
 {
 	return str;
 }
@@ -75,16 +75,21 @@ void lshString::insert(int index, char c)
 
 lshString lshString::operator + (lshString &plus)
 {
-	char* temp = new char(this->size() + plus.size() + 2);
-	strcat(temp, this->str);
-	strcat(temp, plus.getstr());
-	return lshString(temp);
+	int psize = plus.size();
+	int tsize = this->size();
+
+	char* ctemp = NULL;
+	ctemp = new char(psize + tsize + 2);
+	*ctemp = NULL;
+	strcat(ctemp, this->str);
+	strcat(ctemp, plus.getstr());
+	return lshString(ctemp);
 }
 
 lshString& lshString::operator = (lshString &equal)
 {
 	int size = equal.size() + 1;
-	char* temp = equal.getstr();
+	const char* temp = equal.getstr();
 	str = new char(size);
 	memcpy(str, temp, size);
 
