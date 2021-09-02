@@ -2,12 +2,9 @@
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
     <ClCompile Include="stdafx.cpp" />
-    <ClCompile Include="0831.cpp" />
-    <ClCompile Include="lshString.cpp" />
-    <ClCompile Include="main.cpp" />
+    <ClCompile Include="0901.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="stdafx.h" />
-    <ClInclude Include="lshString.h" />
   </ItemGroup>
 </Project>
