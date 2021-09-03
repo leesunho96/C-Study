@@ -71,4 +71,6 @@ int main()
 
 	// 해당 벡터 완전히 비움.
 	testv.clear();
+
+
 }
