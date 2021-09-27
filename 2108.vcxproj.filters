@@ -1,9 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="0923.cpp">
-      <Filter>cppFIles</Filter>
-    </ClCompile>
     <ClCompile Include="Character.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
@@ -16,27 +13,28 @@
     <ClCompile Include="Super.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
+    <ClCompile Include="0924.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">
-      <Filter>header</Filter>
+      <Filter>cppFIles\header</Filter>
     </ClInclude>
     <ClInclude Include="stdafx.h">
-      <Filter>header</Filter>
+      <Filter>cppFIles\header</Filter>
     </ClInclude>
     <ClInclude Include="Sub.h">
-      <Filter>header</Filter>
+      <Filter>cppFIles\header</Filter>
     </ClInclude>
     <ClInclude Include="Super.h">
-      <Filter>header</Filter>
+      <Filter>cppFIles\header</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <Filter Include="header">
-      <UniqueIdentifier>{d361ae63-5050-4e0e-a104-bf8aebdd99ce}</UniqueIdentifier>
-    </Filter>
     <Filter Include="cppFIles">
       <UniqueIdentifier>{d0d04aa9-6748-4c64-aab5-c0c18d69d7ed}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cppFIles\header">
+      <UniqueIdentifier>{d361ae63-5050-4e0e-a104-bf8aebdd99ce}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

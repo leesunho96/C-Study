@@ -4,10 +4,10 @@
 Sub::Sub()
 {
 	mProtectedInt = 10;
-	cout << "Sub" << endl;
+	//cout << "Sub" << endl;
 }
 
 Sub::~Sub()
 {
-	cout << "~Sub" << endl;
+	//cout << "~Sub" << endl;
 }

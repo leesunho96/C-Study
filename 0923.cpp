@@ -2,6 +2,7 @@
 #include "Character.h"
 #include "Sub.h"
 #include "Super.h"
+#include <bitset>
 
 // reinterpret_cast<>의 사용처.
 //extern void ThridPartyLibrary(char* str);
@@ -72,7 +73,6 @@ int main()
 	mySub.someMethod();
 	//cout <<"Super : " << mySuper.getInt() << endl;
 	//cout <<"Sub :: " << mySub.getInt() << endl;
-
 
 
 }

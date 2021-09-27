@@ -4,10 +4,10 @@
 Super::Super()
 {
 	mProtectedInt = 20;
-	cout << "Super" << endl;
+	//cout << "Super" << endl;
 }
 
 Super::~Super()
 {
-	cout << "~Super" << endl;
+	//cout << "~Super" << endl;
 }
