@@ -10,7 +10,7 @@ public:
 	int getInt() { return mProtectedInt; };
 
 	virtual void someMethod() override { cout << "Sub someMethod" << endl; };
-	void someOtherMethod() {};
+	void someOtherMethod() { cout << "someOtherMethod" << endl; };
 	
 };
 

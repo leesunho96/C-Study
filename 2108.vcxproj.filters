@@ -13,7 +13,9 @@
     <ClCompile Include="Super.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
-    <ClCompile Include="0924.cpp" />
+    <ClCompile Include="중요0927.cpp">
+      <Filter>cppFIles</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Character.h">

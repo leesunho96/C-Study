@@ -16,7 +16,7 @@ int main()
 	// 메소드들 모두 접근 가능해짐. 일반적인 선언시 부모의 메소드 접근.
 
 	// 일반 선언 => 부모의 someMethod 접근
-	Super mysuper2 = mysub;
+	//Super mysuper2 = mysub;
 	// 참조자 선언 => 자식의 someMethod 접근
 	Super& mysuper2 = mysub;
 	mysuper2.someMethod();
@@ -42,11 +42,12 @@ int main()
 	// DOWNCASTING => 반드시 하나 이상의 Virtual Method가 존재 해야 함.
 	// Virtual Keyword => V-Table 생성.
 	// V table : 가상함수들의 포인터를 보관하고 있는 테이블.
+
 	Sub* mysub2 = dynamic_cast<Sub*>(mySuper3);
 
 	// 다운캐스팅은 컴파일 타임에 타입 검사가 불가능 => error. 일반적으로 사용 잘 안함.
 	// 정상 작동 보장을 하지 못함.
-
+	mysub2->someMethod();
 
 	// V-Table 
 	// 부모와 자식 각각 virtual keyword 갖는 메소드에 대한 함수 포인터 테이블을 갖는다.
