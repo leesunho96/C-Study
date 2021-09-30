@@ -3,19 +3,19 @@
 
 
 //LValue참조
-void Incr(int& value)
+void incr(int& value)
 {
-	cout << "lValue inrement with lValue reference" << endl;
+	cout << "lvalue inrement with lvalue reference" << endl;
 	++value;
-	cout << value << endl;
+	//cout << value << endl;
 }
 
 //rvalue 참조.
-void incr(int&& value)
+void Incr(int&& value)
 {
 	cout << "&&value inrement with lvalue reference" << endl;
-	++value;
-	cout << value << endl;
+	//++value;
+	//cout << value << endl;
 }
 
 void Incr(const int& value)
@@ -81,7 +81,7 @@ int main()
 	int a2 = 10, b2 = 20;
 
 	// 좌측값 참조.
-	Incr(a2);
+	Incr(move(a2));
 
 	// 우측값 참조.
 	// 해당 값은 참조가 불가능하기 떄문에 error.

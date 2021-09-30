@@ -13,7 +13,7 @@
     <ClCompile Include="Super.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
-    <ClCompile Include="중요0927.cpp">
+    <ClCompile Include="0930.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
   </ItemGroup>

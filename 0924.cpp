@@ -18,9 +18,12 @@ int main()
 	// 일반 선언 => 부모의 someMethod 접근
 	//Super mysuper2 = mysub;
 	// 참조자 선언 => 자식의 someMethod 접근
-	Super& mysuper2 = mysub;
-	mysuper2.someMethod();
+	/*Super& mysuper2 = mysub;
+	mysuper2.someMethod();*/
 	
+
+	Super* mysuper2 = &mysub;
+	mysuper2->someMethod();
 	//UPCASTING 의 경우 자식의 기능은 상실. 
 	//따라서 UPCASTING의 경우 항상 reference로 접근 => 자식 원본 접근 가능해짐.
 	// 자식에서 오버라이딩한걸 보전 가능해짐.

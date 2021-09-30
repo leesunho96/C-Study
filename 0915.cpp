@@ -12,16 +12,16 @@ void Incr(int& value)
 //RValue 참조.
 void Incr(int&& value)
 {
-	cout << "RValue inrement with lValue reference" << endl;
+	cout << "RValue inrement with RValue reference" << endl;
 	++value;
 	cout << value;
 }
 
-//void Incr(const int& value)
-//{
-//	cout << "RValue inrement with lValue reference" << endl;
-//	//++value;
-//}
+void incr(const int& value)
+{
+	cout << "rvalue inrement with const reference" << endl;
+	//++value;
+}
 
 
 
@@ -67,6 +67,8 @@ int main()
 	int* xPtr = &xRef;
 	cout << *xPtr;
 
+
+	cout << &ix << "   " << &xRef << endl;
 	// return 에도 참조/포인터 반환 가능.
 	// 해당 return시 참조하는 데이터가 해당 함수의 지역변수를 반환 하여서는 안됨.
 	// 반환시 이미 해당 함수는 종료 => stack frame 부서짐. 해당 변수는 의미를 잃음.
@@ -86,6 +88,8 @@ int main()
 
 	// move : LValue를 RValue로 변환하여 전달하는 함수.
 	Incr(move(b));
+
+	Incr(5);
 
 
 	// 우측값 참조는 일반적으로 원본 데이터가 삭제 됨을 알고 있을때 이용.
