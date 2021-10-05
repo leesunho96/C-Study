@@ -1,5 +1,6 @@
 #pragma once
 #include "Super.h"
+
 class Sub :
 	public Super
 {
