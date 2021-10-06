@@ -19,7 +19,7 @@ public:
 	Class<T>& operator + (const Class<T>& target);
 
 	template <typename E>
-	Class<T> Class(const Class<E>& rhs);
+	Class(const Class<E>& rhs);
 
 
 	T getData();

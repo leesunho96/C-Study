@@ -4,10 +4,13 @@
     <ClCompile Include="stdafx.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
-    <ClCompile Include="1005.cpp">
+    <ClCompile Include="Class.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
-    <ClCompile Include="Class.cpp">
+    <ClCompile Include="1006.cpp">
+      <Filter>cppFIles</Filter>
+    </ClCompile>
+    <ClCompile Include="1005.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
   </ItemGroup>
