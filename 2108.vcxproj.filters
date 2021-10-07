@@ -7,10 +7,7 @@
     <ClCompile Include="Class.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
-    <ClCompile Include="1006.cpp">
-      <Filter>cppFIles</Filter>
-    </ClCompile>
-    <ClCompile Include="1005.cpp">
+    <ClCompile Include="1007.cpp">
       <Filter>cppFIles</Filter>
     </ClCompile>
   </ItemGroup>
